@@ -22,3 +22,5 @@ chmod +x configure
 
 make -j${CPU_COUNT}
 make install
+
+nm "${PREFIX}/lib/libpynac.dylib" | grep _ZTVN5GiNaC9container
